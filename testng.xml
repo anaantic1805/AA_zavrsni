@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSuite" parallel="classes" thread-count="2">
+
+    <parameter name="subCategory1" value="Tekstil"/>
+    <parameter name="subCategory2" value="Tekstil za sto"/>
+    <parameter name="subCategory3" value="Stolnjaci i nadstolnjaci"/>
+    <parameter name="modalOfFilter" value="Svi filteri"/>
+    <parameter name="Sort" value="Razvrstaj"/>
+    <parameter name="Nacin" value="Cena: od manje ka većoj"/>
+    <parameter name="Color" value="Boja"/>
+    <parameter name="Vrednost boje" value="crna"/>
+    <parameter name="addProduct" value="maerit-nadstolnjak-crna"/>
+
+
+
+        <test name="Products">
+        <classes>
+            <class name="tests.Firefox"/>
+            <class name="tests.Chrome"/>
+        </classes>
+    </test>
+
+</suite>
